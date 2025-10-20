@@ -91,6 +91,20 @@ public class EmergencyRoom() {
     return false;
   }
     
-  
+  public List<String> getOperationHistory() {
+    return null;
+  }
+
+  public List <Pair<String, Double>> getAverageWaitingTimeBySeverity() {
+    return null;
+  }
+
+  public List<Pair<String, Double>> getPatientCountBySeverity() {
+    return null;
+  }
+
+  public double getTreatmentRoomUtilization(int rooms) {
+    return 0;
+  }
 
 }
