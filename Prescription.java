@@ -19,50 +19,18 @@ public class Prescription {
   }
 
   public String getID() {return this.id;}
+  public String getPatientID() {return this.patientID;}
+  public String getPatientName() {return this.patientName;}
+  public String getMedication() {return this.medication;}
+  public String getDosage() {return this.dosage;}
+  public LocalDateTime getIssuedTime() {return this.issuedTime;}
 
-  public String getPatientID() {
-    return this.patientID;
-  }
-  
-  public String getPatientName() {
-    return this.patientName;
-  }
-  
-  public String getMedication() {
-    return this.medication;
-  }
-  
-  public String getDosage() {
-    return this.dosage;
-  }
-
-  public LocalDateTime getIssuedTime() {
-    return this.issuedTime;
-  }
-
-  public void setID(String id) {
-    this.id = id;
-  }
-
-  public void setPatientID(String patientID) {
-    this.patientID = patientID;
-  }
-  
-  public void setPatientName(String patientName) {
-    this.patientName = patientName;
-  }
-  
-  public void setMedication(String medication) {
-    this.medication = medication;
-  }
-  
-  public void getDosage(String dosage) {
-    this.dosage = dosage;
-  }
-
-  public void setIssuedTime(LocalDateTime issuedTime) {
-    this.issuedTime = issuedTime;
-  }
+  public void setID(String id) {this.id = id;}
+  public void setPatientID(String patientID) {this.patientID = patientID;}
+  public void setPatientName(String patientName) {this.patientName = patientName;}
+  public void setMedication(String medication) {this.medication = medication;}
+  public void setDosage(String dosage) {this.dosage = dosage;}
+  public void setIssuedTime(LocalDateTime issuedTime) {this.issuedTime = issuedTime;}
 
   public String toString() {
     return String.format("", id);
