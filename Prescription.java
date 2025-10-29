@@ -1,4 +1,4 @@
-import java.util.*;
+import java.time.LocalDateTime;
 
 public class Prescription {
   private String id;
@@ -9,13 +9,15 @@ public class Prescription {
   private LocalDateTime issuedTime;
   private boolean filled;
 
-  public Prescription(String id, String patientID, LocalDateTime issuedTime, String patientName, String medication, String dosage) {
+  public Prescription(String id, String patientID, String patientName, String medication, String dosage) {
     this.id = id;
     this.patientID = patientID;
-    this.issuedTime = issuedTime;
+    this.issuedTime = LocalDateTime.now();
     this.patientName = patientName;
     this.medication = medication;
     this.dosage = dosage;
+    this.filled = false;
+    
   }
 
   public String getID() {return this.id;}
@@ -26,7 +28,7 @@ public class Prescription {
   public LocalDateTime getIssuedTime() {return this.issuedTime;}
 
   public void setID(String id) {this.id = id;}
-  public void setPatientID(String patientID) {this.patientID = patientID;}
+  public void setPatientId(String patientID) {this.patientID = patientID;}
   public void setPatientName(String patientName) {this.patientName = patientName;}
   public void setMedication(String medication) {this.medication = medication;}
   public void setDosage(String dosage) {this.dosage = dosage;}

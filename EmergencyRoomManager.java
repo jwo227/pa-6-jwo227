@@ -83,7 +83,7 @@ public class EmergencyRoomManager{
 
         // treatment room utilization
         System.out.println("\nTest case 10: Treatment Room Utilization");
-        System.out.println("Treatment room utilization = " + String.format("%.2f%%",er.getTreatmentRoomUlization(5)*100));
+        System.out.println("Treatment room utilization = " + String.format("%.2f%%",er.getTreatmentRoomUtilization(5)*100));
         
         // demonstrate undo operations
         System.out.println("\nTest case 11: History of operations in the ER");
